@@ -1,0 +1,169 @@
+.user {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  border-radius: 20px;
+}
+.user:hover {
+  background-color: rgb(250, 249, 248);
+}
+
+.leftnames {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+}
+
+.leftinfo {
+  width: 100%;
+  display: flex;
+}
+.listnum {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 10%;
+  border: 2px solid rgb(0, 255, 13);
+  border-radius: 20px;
+}
+.listnumber {
+  font-size: 2.5rem;
+}
+.names {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid rgb(0, 255, 13);
+  padding: 0.5rem;
+  width: 48%;
+  border-radius: 20px;
+}
+.name {
+  font-size: 2rem;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+.emails {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid rgb(0, 255, 13);
+  width: 60%;
+  padding: 0.5rem;
+  border-radius: 20px;
+}
+
+.email {
+  font-size: 2rem;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+.butttons {
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+  align-items: center;
+  border: 2px solid rgb(0, 255, 13);
+  padding: 0.5rem;
+  border-radius: 20px;
+}
+
+.viewbutton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 1rem;
+  background-color: yellow;
+  border-radius: 20px;
+  padding: 0.1rem;
+  width: 6rem;
+}
+.view {
+  padding: 0.3rem;
+  font-size: 2rem;
+  text-decoration: none;
+  color: green;
+}
+.viewbutton:hover {
+  background-color: black;
+}
+.viewbutton:hover > .view {
+  color: white;
+}
+.editbutton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 1rem;
+  background-color: coral;
+  border-radius: 20px;
+  padding: 0.4rem;
+  width: 6rem;
+}
+.edit {
+  font-size: 2rem;
+  text-decoration: none;
+  color: rgb(12, 115, 156);
+}
+.editbutton:hover {
+  background-color: black;
+}
+.editbutton:hover > .edit {
+  color: white;
+}
+
+.deletebutton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: aqua;
+  border-radius: 20px;
+  margin-right: 0.5rem;
+  padding: 0.4rem;
+
+  width: 8rem;
+}
+.delete {
+  font-size: 2rem;
+  margin-right: 1rem;
+  margin-left: 1rem;
+  text-decoration: none;
+  color: rgb(153, 4, 4);
+}
+
+.deletebutton:hover {
+  background-color: black;
+}
+.deletebutton:hover > .delete {
+  color: white;
+}
+@media screen and (max-width: 700px) {
+  .emails {
+    display: none;
+  }
+  .names {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .view,
+  .delete,
+  .edit {
+    font-size: 1rem;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+  }
+  .viewbutton,
+  .editbutton,
+  .deletebutton {
+    margin-left: 0.3rem;
+    margin-right: 0.3rem;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .names {
+    font-size: 1rem;
+  }
+}

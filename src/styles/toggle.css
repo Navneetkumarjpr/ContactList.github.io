@@ -1,0 +1,138 @@
+.wrap{
+    position: relative;
+}
+.tooglebar{
+    background-color: black;
+    width: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: space-around;
+    padding: 0.9rem;
+    visibility: hidden;
+}
+.logotoogle{
+    display: flex;
+    height: 5rem;
+    border-radius: 20px;
+    margin-right: 2rem;
+}
+.threeline{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    cursor: pointer;
+    padding: 0.5rem;
+}
+.line{
+    width: 3rem;
+    height: 0.5rem;
+    background-color: blue;
+    margin-bottom: 0.5rem;
+}
+
+.sidenav{
+    position: absolute;
+    z-index: 10;
+    background-color: rgb(11, 11, 12);
+    height: 800%;
+    transform-origin: left;
+    visibility: hidden;
+    transition: all 0.7s ease-in-out;
+}
+
+.sidenavlinks{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem;
+    width: 100%;
+}
+.sidenavlogo{
+    background-color: black;
+    width: 4.7rem;
+    border-radius: 20px;
+
+}
+.sidenavhome,.sidenavabout,.sidenavnewcontact{
+    text-decoration: none;
+    color: black;
+    font-size: 1.5rem;
+
+}
+.sidenavhome:focus,.sidenavabout:focus,.sidenavnewcontact:focus{
+    color: green;
+}
+.sidelink1,.sidelink2,.sidelink3{
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    width: 100%;
+    margin-left: 0.5rem;
+}
+.sidecross{
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+}
+.sidelinkss{
+    padding: 2rem;
+}
+.sidelogo{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    margin-right: 2rem;
+}
+.cross1{
+    width: 3rem;
+    background-color: white;
+    height: 0.5rem;
+    transform: rotate(45deg);
+    position: absolute;
+}
+.cross2{
+    width: 3rem;
+    background-color: white;
+    height: 0.5rem;
+    transform: rotate(-45deg);
+    position: absolute;
+}
+.moveleft{
+    transform: translateX(-1000px);
+    transition: all 0.5s ease-in-out;
+}
+@media screen and (max-width: 600px){
+    .tooglebar{
+        justify-content: space-around;
+        display: flex;
+        flex-direction: row;
+    }
+}
+@media screen and (max-width: 700px){
+    .tooglebar{
+        visibility: visible;
+    }
+
+    .sidenav{
+        visibility: visible;
+        z-index: 5;
+    }
+}
+
+@media screen and (max-width: 300px){
+    .logotoogle{
+        margin-right: 0rem;
+    }
+    .l1,.l2{
+        width: 0rem;
+        height: 0rem;
+    }
+    .b1,.b2{
+        width: 0rem;
+        height: 5rem;
+    }
+}

@@ -1,0 +1,153 @@
+.newcontact{
+    width: 100%;
+}
+.newcontactheading{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 2px solid black;
+}
+.contactdetails{
+    width: 50%;
+    display: flex;
+    border:  2px solid black;
+    margin-top: 2rem;
+    margin-left: 1rem;
+    box-shadow: 0px 0px 15px 0px rgb(1, 7, 7);
+    padding-bottom: 1rem;
+    border-radius: 8px;
+    background-color: white;
+}
+.newcontacts{
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+    margin-left: 1rem;
+}
+.error{
+    color: red;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+.entername,.enterusername,.enteremailaddress,.enterphonenumber{
+    margin-top: 1rem;
+    width: 30vw;
+    height: 3rem;
+    font-size: 1.5rem;
+    padding: 0.5rem;
+    outline: none;
+    border-radius: 15px;
+    border: 3px solid rgb(26, 185, 5);
+    transition: all 0.3s ease-in-out;
+}
+.entername:focus,.enterusername:focus,.enteremailaddress:focus,.enterphonenumber:focus{
+   box-shadow: 0px 0px 10px 0px rgb(184, 172, 3);
+}
+
+.addcontact{
+margin-left: 3rem;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+
+.addcontactbutton{
+    width: 100%;
+    height: auto;
+    font-size: 1.5rem;
+    padding-top: 0.5rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    padding-bottom: 0.5rem;
+    text-align: center;
+    outline: none;
+    border: 3px solid rgb(6, 243, 6);
+    background-color: aliceblue;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    margin-bottom: 2rem;
+    text-decoration: none;
+    color: black;
+    font-size: 1.7rem;
+    font-family: 'Creepster', cursive;
+    letter-spacing: 1px;
+}
+.cancelcontactbutton{
+    width: 50%;
+    margin-left: 1rem;
+    height: auto;
+    font-size: 1.8rem;
+    padding-top: 0.5rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    padding-bottom: 0.5rem;
+    text-align: center;
+    outline: none;
+    border: 3px solid rgb(243, 6, 6);
+    background-color: aliceblue;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    margin-bottom: 2rem;
+    text-decoration: none;
+    color: black;
+}
+.cancelcontactbutton:hover{
+    background-color: black;
+    color: white;
+    
+}
+.addcontactbutton:hover{
+    background-color: black;
+    color: white;
+}
+@media screen and (max-width: 730px){
+    .addcontactbutton{
+        padding: 1.5rem 1.5rem;
+        font-size: 1rem;
+        width: auto;
+    }
+    .contactdetails{
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        margin-right: 2rem;
+    }
+    .newcontacts{
+        width: 90%;
+    }
+    .entername,.enterusername,.enteremailaddress,.enterphonenumber{
+        width: 100%;
+    }
+    .addcontact{
+        margin-left: 1rem;
+        margin-top: 2rem;
+    
+    }
+    .hello{
+        padding: 1.5rem 1.5rem;
+        font-size: 1rem;
+        width: auto;
+    }
+    .cancelcontactbutton{
+        font-size: 1.5rem;
+    }
+ }
+
+ @media screen and (max-width: 1400px){
+   .addcontact{
+       flex-direction: column;
+   }
+   .addcontactbutton{
+       width: auto;
+       font-size: 1.5rem;
+       padding: 0.5rem 0.5rem;
+   }
+   .cancelcontactbutton{
+       width: auto;
+       font-size: 1.5rem;
+   }
+ }

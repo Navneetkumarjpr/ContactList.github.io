@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+  box-sizing: border-box;
+}
+body{
+    font-family: 'Creepster', cursive;
+    overflow-x: hidden;
+    background-color: rgb(162, 252, 207);
+}
+body::-webkit-scrollbar {
+    /* display: none; */
+    width: 8px;             
+  }
+  
+  body::-webkit-scrollbar-track {
+    background: rgb(162, 252, 207);       
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background-color: rgb(3, 3, 8);   
+    border-radius: 20px;       
+    border: 1px solid rgb(0, 255, 34);  
+  }
+
+.App{
+    min-width: 100vw;
+    min-height: 100vh;
+}
+.nav{
+    width: 100%;
+    background-color: black;
+    position: sticky;
+    border-radius: 20px;
+    top: 0;
+    visibility: visible;
+}
+@media screen and (max-width: 700px){
+  .nav{
+      visibility: hidden;
+  }
+}

@@ -1,0 +1,112 @@
+.Navbar{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    padding: 1rem;
+    border-radius: 25px;
+}
+.navbutton{
+    width: 50%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.hom{
+    margin-left: 2%;
+}
+.hom,.abo,.new{
+    margin-right: 2rem;
+    background-color: white;
+    padding: 1rem;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-content: center;
+    border: 5px solid rgb(22, 18, 18);
+    cursor: pointer;
+    color: black;
+}
+.new{
+    padding: 1rem 1.5rem;
+    cursor: pointer;
+}
+.is-active{
+    color: rgb(3, 202, 3);
+    transform: scale(1.2);
+}
+.newcontact{
+    cursor: pointer;
+}
+.home,.about,.newcontact{
+    font-size: 1.8rem;
+    text-decoration: none;
+    transition: all 0.2s ease-in-out;
+    letter-spacing: 1px;
+
+}
+.hom:active > .hom{
+color: green;
+}
+.hom:hover > .home{
+    color: green;
+}
+.abo:hover > .about{
+    color: green;
+}
+.new:hover > .newcontact{
+    color: green;
+}
+.hom:hover,.abo:hover,.new:hover{
+    border: 5px solid rgb(3, 202, 3);
+}
+.navlogo{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 50%;
+}
+
+.logo{
+    background-color: black;
+    width: 4.7rem;
+    border-radius: 20px;
+    margin-right: 4rem;
+}
+
+.aboutpage{
+    width: 100%;
+    height: 100%;
+    margin-top:3rem;
+    margin-left: 2rem;
+}
+
+.abouthead{
+    letter-spacing: 1px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+
+@media screen and (max-width: 800px){
+    .logo{
+   margin-right: 0;
+    }
+    .home,.about,.newcontact{
+        font-size: 1rem;
+    }
+}
+@media screen and (max-width: 700px){
+    .logo{
+   margin-right: 0;
+    }
+    .hom,.abo,.new{
+   margin-right: 0.5rem;
+
+    }
+
+    .Navbar{
+        visibility: hidden;
+    }
+
+}
+

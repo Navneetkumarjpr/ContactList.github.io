@@ -1,0 +1,25 @@
+{
+  "contacts": [
+    {
+      "name": "Person1 Singh",
+      "username": "Person1",
+      "email": "person1@gmail.com",
+      "phone": "1111111111",
+      "id": 1
+    },
+    {
+      "name": "person2 kumar",
+      "username": "person2",
+      "email": "person2@gmail.com",
+      "phone": "2222222222",
+      "id": 2
+    },
+    {
+      "name": "Person3 Singh",
+      "username": "Person3",
+      "email": "person3@gmail.com",
+      "phone": "3333333333",
+      "id": 3
+    }
+  ]
+}

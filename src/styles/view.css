@@ -1,0 +1,76 @@
+.viewpage{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.viewhead{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 2px solid black;
+
+}
+
+.viewheading{
+    font-size: 4rem;
+    padding: 0.5rem 0.5rem;
+}
+.viewdetails{
+    background-color: aqua;
+    margin-top: 2rem;
+    display: flex;
+    box-shadow: 0px 0px 15px 0px rgb(1, 7, 7);
+    border-radius: 8px;
+    background-color: white;
+    padding: 1rem 2rem;
+    padding-bottom: 2rem;
+}
+.viewdetailsleft{
+    display: flex;
+    flex-direction: column;
+    margin-right: 0.7rem;
+}
+
+.namview,.userview, .emaview, .phoneview{
+    font-size: 2.5rem;
+    margin-top: 1rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.nameView,.usernameview,.emailview,.phonenumberview{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.viewtohome{
+    margin-top: 2rem;
+}
+.viewtoback{
+    font-size: 2rem;
+    padding: 0.5rem 0.5rem;
+    text-align: center;
+    outline: none;
+    color: black;
+    border: 3px solid rgb(6, 243, 6);
+    background-color: white;
+    border-radius: 20px;
+    text-decoration: none;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+.viewtoback:hover{
+    background-color: black;
+    color: white;
+}
+
+@media screen and (max-width: 750px){
+    .viewdetails{
+        width: 90%;
+    }
+    .namview,.userview, .emaview, .phoneview{
+        font-size: 1.5rem;
+    }
+ }
